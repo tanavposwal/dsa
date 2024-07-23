@@ -1,0 +1,1 @@
+g++ rough.cpp -o rough && ./rough
