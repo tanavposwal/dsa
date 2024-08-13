@@ -30,7 +30,7 @@ Node* buildTree(Node* root) {
 
     return root;
 }
-
+// DFS
 void levelOrderTraversal(Node* root) {
     queue<Node*> q;
     q.push(root);
@@ -60,7 +60,7 @@ void levelOrderTraversal(Node* root) {
         }
     }
 }
-
+// BFS
 void inorderTraversal(Node* root) {
     if (root == NULL) {
         return;
@@ -69,7 +69,7 @@ void inorderTraversal(Node* root) {
     cout << root->data << " ";
     inorderTraversal(root->right);
 }
-
+// BFS
 void preorderTraveral(Node* root) {
     if (root == NULL) {
         return;
@@ -78,7 +78,7 @@ void preorderTraveral(Node* root) {
     preorderTraveral(root->left);
     preorderTraveral(root->right);
 }
-
+// BFS
 void postorderTraversal(Node* root) {
     if (root == NULL) {
         return;
